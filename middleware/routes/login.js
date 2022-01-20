@@ -6,7 +6,7 @@ const config = require("config");
 // used to validate response in the server-side
 const { body, validationResult } = require("express-validator");
 const User = require("../models/User");
-const auth = require("../middleware/auth");
+const auth = require("../authentication/auth");
 
 // * @route   POST api/login
 // * @desc    Auth user and get token

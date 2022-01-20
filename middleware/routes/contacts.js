@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const auth = require("../middleware/auth");
+const auth = require("../authentication/auth");
 // used to validate response in the server-side
 const { body, validationResult } = require("express-validator");
 const Contact = require("../models/Contact");
