@@ -14,7 +14,7 @@ const auth = require("../authentication/auth");
 router.post(
   "/",
   [
-    body("username", "please enter the username!").not().isEmpty(),
+    body("email", "please enter the email!").not().isEmpty(),
     body("password", "please enter the password").not().isEmpty(),
   ],
   async (req, res) => {
@@ -22,9 +22,9 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-    const { username, password } = req.body;
+    const { email, password } = req.body;
     try {
-      let user = await User.findOne({ username });
+      let user = await User.findOne({ email });
       if (!user) {
         return res.status(400).json({ message: "Invalid Credentials" });
       }

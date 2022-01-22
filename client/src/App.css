@@ -1,0 +1,87 @@
+@import "~antd/dist/antd";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.site-layout-content {
+  min-height: 560px;
+  background: #fff;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.gutter-col {
+  padding: 8px 0;
+}
+.card {
+  border-radius: 2px;
+  min-height: 120px !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.login-div {
+  height: 91vh;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #192355,
+    #3b2a71,
+    #632b87,
+    #912197
+  );
+}
+.layout-div {
+  height: 91vh;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+.home {
+  height: 91vh;
+  background-image: linear-gradient(
+    to right top,
+    #70396e,
+    #484980,
+    #085480,
+    #005a71,
+    #0c5c5c
+  );
+}
+.contacts {
+  height: 91vh;
+  background-image: linear-gradient(to right top, #dcdcdc, #bab9ba, #989898, #787878, #5a5959);
+}
+.login-inner {
+  min-height: 387px;
+  min-width: 445px;
+  width: 300px;
+  background: #fff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 25px;
+}
+.home-inner {
+  min-height: 387px;
+  min-width: 445px;
+  width: 300px;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+}
