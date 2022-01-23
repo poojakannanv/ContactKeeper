@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Contact from "./Contact";
 import { Col, Row } from "antd";
@@ -11,7 +11,8 @@ const Contacts = () => {
 
   useEffect(() => {
     getAllContacts();
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
 
   const getAllContacts = () => {
     var config = {

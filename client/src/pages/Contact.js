@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Card, Col, Row } from "antd";
+import { Card, Col } from "antd";
 import { useNavigate } from "react-router-dom";
 import { Typography } from "antd";
 import { FaUserAlt } from "react-icons/fa";
@@ -21,7 +20,6 @@ const Contact = (props) => {
           onClick(props.data._id);
         }}
         className="card"
-        
       >
         <Title level={4} className="capitalize">
           <FaUserAlt /> <Text>{props.data.name}</Text>

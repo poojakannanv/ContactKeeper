@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input, Button, Select, message } from "antd";
+import { Form, Input, Select, message , Button} from "antd";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router";
@@ -103,14 +103,14 @@ const CreateContact = () => {
           </Form.Item>
 
           <Form.Item style={{ marginTop: 30 }}>
-            <button
+            <Button
               type="primary"
-              htmltype="submit"
+              htmlType="submit"
               style={{ marginRight: 30 }}
               className="btn btn-primary"
             >
               Create
-            </button>
+            </Button>
             <Link type="button" className="btn btn-secondary" to="/contacts">
               Cancle
             </Link>

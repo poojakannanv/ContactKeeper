@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-import { Form, Input, Select, message } from "antd";
+import { Form, Input, Select, message,Button } from "antd";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router";
@@ -64,6 +63,7 @@ const EditContact = () => {
 
   useEffect(() => {
     getContact();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -131,14 +131,14 @@ const EditContact = () => {
           </Form.Item>
 
           <Form.Item style={{ marginTop: 30 }}>
-            <button
+            <Button
               type="primary"
-              htmltype="submit"
+              htmlType="submit"
               style={{ marginRight: 30 }}
               className="btn btn-primary"
             >
               Update
-            </button>
+            </Button>
             <Link
               type="button"
               className="btn btn-secondary"

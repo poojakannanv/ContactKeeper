@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Form, Input, Button, Checkbox, message } from "antd";
+import { Form, Input, Button, message } from "antd";
 import { useNavigate, Navigate } from "react-router-dom";
 
 const SignUp = () => {
@@ -117,7 +117,7 @@ const SignUp = () => {
               span: 16,
             }}
           >
-            <Button type="primary" htmltype="submit">
+            <Button type="primary" htmlType="submit">
               Sign Up
             </Button>
           </Form.Item>
